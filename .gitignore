@@ -2,3 +2,4 @@
 /__pycache__/*
 /t5_env/*
 /models/*
+/model_store/*
