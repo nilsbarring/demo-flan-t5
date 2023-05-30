@@ -1,4 +1,4 @@
-torch-model-archiver --model-name flan_t5 --version 1.0 --model-file handler.py --serialized-file pytorch_model.bin --extra-files config.json,tokenizer.json,generation_config.json,special_tokens_map.json,tokenized_config.json --handler handler.py
+torch-model-archiver --model-name flan_t5 --version 1.0 --serialized-file pytorch_model.bin --extra-files config.json,tokenizer.json,generation_config.json,special_tokens_map.json,tokenized_config.json --handler handler.py
 
 For torchserve: 
 torchserve --start --model-store model_store --models flan_t5=flan_t5.mar
